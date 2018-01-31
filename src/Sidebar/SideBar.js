@@ -15,18 +15,18 @@ export default class SideBar extends React.Component {
                 </Body>
             </Header>
             <Card >
-            <CardItem style={{marginTop:10}} >
+            <CardItem style={{marginTop:10}} button onPress={() => this.props.navigation.navigate("Home")}>
                 <Text>Home</Text>
             </CardItem>
-            <CardItem style={{marginTop:10}} >
+            <CardItem style={{marginTop:10}} button onPress={() => this.props.navigation.navigate("Category")}>
                 <Text>Shop by Category</Text>
             </CardItem>
-            <CardItem style={{marginTop:10}} >
+            <CardItem style={{marginTop:10}} button onPress={() => this.props.navigation.navigate("Todays_deals")} >
                 <Text>Today's Deals</Text>
             </CardItem>
             </Card>
             <Card >
-            <CardItem style={{marginTop:10}} >
+            <CardItem style={{marginTop:10}} button onPress={() => this.props.navigation.navigate("Orders")}>
                 <Text>Your orders</Text>
             </CardItem>
             <CardItem style={{marginTop:10}} >

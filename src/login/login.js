@@ -38,27 +38,24 @@ class Login extends React.Component {
        </InputGroup>
   </ListItem>
          </List>
-         <Button full rounded onPress={this.login.bind(this)}>
-             <Text> Login </Text>
+         <Button style={{backgroundColor:"#E7DD39"}} full onPress={this.login.bind(this)}>
+             <Text  style={{color:"black"}}> Login </Text>
          </Button>
          <Text style={{color:"darkblue", marginTop:5,marginBottom:5,marginLeft:5}}>
-             New Here?
          </Text>
-         <Button full rounded onPress={this.goToSignup.bind(this)}>
-             <Text > Sign-up</Text>
+         <Button full style={{backgroundColor:"#F1EFDA"}} onPress={this.goToSignup.bind(this)}>
+             <Text style={{color:"black"}} > Sign-up</Text>
          </Button>
-         <Text style={{color:"darkblue", marginTop:5,marginBottom:5,marginLeft:5}}>
-             Sign-in later
+         <Text>
          </Text>
-         <Button full rounded onPress={this.home.bind(this)}>
-             <Text > Home</Text>
-             <Icon name="ios-home" />
+         <Button full style={{backgroundColor:"#F1EFDA"}} onPress={this.home.bind(this)}>
+             <Text  style={{color:"black"}}>Sign in later</Text>
          </Button>
    </Content>;
 
       return (
         <Container>
-           <Header style={{backgroundColor:"#E3EDF0"}} >
+           <Header style={{backgroundColor:"white"}} >
                 <Title style={{marginTop:10, marginRight:5, color:"black"}} >Login</Title>
             </Header>
             {content}

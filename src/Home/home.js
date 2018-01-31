@@ -6,19 +6,17 @@ export default class Home extends React.Component {
     render() {
         const content=
             <Content>
-                <List>
-                    <ListItem>
-                        <Left>
-                        <Button primary style={{backgroundColor:"white"}} >
+                <Card>
+                    <CardItem>
+                        <Button primary style={{backgroundColor:"grey"}} onPress={() => this.props.navigation.navigate("Category")}>
                             <Text style={{color:"black"}} >
                                 Category
                             </Text>
                         </Button>
-                        </Left>
                         <Icon name="ios-search" />
                         <Input placeholder="Search" />
-                    </ListItem>
-                </List>
+                    </CardItem>
+                </Card>
                 <Card>
                     <CardItem>
                     <Text>
@@ -30,7 +28,7 @@ export default class Home extends React.Component {
                     Your recommendations
                 </Text>
                 <Card>
-                    <CardItem style={{marginTop:20, padding:10}}>
+                    <CardItem style={{marginTop:20, padding:10}} button onPress={() => this.props.navigation.navigate("Item")} >
                     <Text>
                         Item 1 Price
                     </Text>
@@ -55,7 +53,7 @@ export default class Home extends React.Component {
                         Item 5 Price
                     </Text>
                 </CardItem>
-                <Button light>
+                <Button light onPress={() => this.props.navigation.navigate("Recommendations")}>
                     <Text >
                         See more
                     </Text>
@@ -90,7 +88,7 @@ export default class Home extends React.Component {
                         Item 5 Price
                     </Text>
                 </CardItem>
-                <Button light>
+                <Button light onPress={() => this.props.navigation.navigate("Todays_deals")}>
                     <Text >
                         See more
                     </Text>
